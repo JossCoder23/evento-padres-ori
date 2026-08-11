@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ctnBloque1">
+
+            <div class="logoContent">
+                <img style="height: 3.5rem;" class="logo" src="logo-pucp.png" alt="Logo Institucional">
+            </div>
+
+            <div class="backFormulario" id="formularioGeneral">
+                <div class="ctnFormulario">
+                    <h3 class="title">Regístrate aquí</h3>
+                    <h5>Ingresa tus datos correctamente y verifícalos antes de enviar el formulario para que podamos comunicarnos contigo.</h5>
+                    
+                    <!-- Añadido method="POST" para preparar el envío de datos -->
+                    <form class="bloque1Container__form" id="my-form-pregrado" method="POST">
+                        <style>
+                            .oculto { display: none; }
+                        </style>
+
+                        <fieldset class="ctPreguntas">
+                            <legend>Tus datos (padre/madre o apoderado)</legend>    
+
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="tutor_names" type="text" name="tutor_names" maxlength="40" required autocomplete="off" placeholder="Nombres"/>
+                                </div>
+                                <div class="input-field">
+                                    <input class="requerido" id="tutor-paternal-surname" type="text" name="tutor-paternal-surname" maxlength="40" required autocomplete="off" placeholder="Apellido Paterno"/>
+                                </div>
+                                
+                            </div>
+
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <select class="requerido" id="tutor-type-document" name="tutor-type-document" required>
+                                        <option value="" disabled selected>Tipo de documento</option>
+                                        <option value="DNI">DNI</option>
+                                        <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                        <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <input class="requerido" id="tutor-number-document" type="text" name="tutor-number-document" maxlength="20" required autocomplete="off" placeholder="Numero de documento" />
+                                </div>
+                            </div>
+                        
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="phone" type="tel" name="phone" maxlength="9" required autocomplete="off" placeholder="Celular"/>
+                                </div>
+                                <div class="input-field">
+                                    <input class="requerido" id="tutor-email" type="email" name="tutor-email" maxlength="100" required autocomplete="off" placeholder="Correo"/>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="ctPreguntas">
+                            <legend>Datos de tu hijo o menor</legend>    
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Nombres"/>
+                                </div>
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Apellido Paterno"/>
+                                </div>
+                            </div>
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Apellido Materno"/>
+                                </div>
+                                <div class="input-field">
+                                    <select class="requerido" id="tutor-type-document" name="tutor-type-document" required>
+                                        <option value="" disabled selected>Tipo de documento</option>
+                                        <option value="DNI">DNI</option>
+                                        <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                        <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Nro de documento"/>
+                                </div>
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Celular"/>
+                                </div>
+                            </div>
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <input class="requerido" id="names" type="text" name="names" maxlength="40" required autocomplete="off" placeholder="Correo"/>
+                                </div>
+                                <div class="input-field">
+                                    <select class="requerido" id="tutor-type-document" name="tutor-type-document" required>
+                                        <option value="" disabled selected>Carrera de interés</option>
+                                        <option value="DNI">DNI</option>
+                                        <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                        <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="double__form">
+                                <div class="input-field">
+                                    <select class="requerido" id="tutor-type-document" name="tutor-type-document" required>
+                                        <option value="" disabled selected>Selecciona un colegio</option>
+                                        <option value="DNI">DNI</option>
+                                        <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                        <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                                <div class="input-field">
+                                    <select class="requerido" id="tutor-type-document" name="tutor-type-document" required>
+                                        <option value="" disabled selected>Año de egreso</option>
+                                        <option value="DNI">DNI</option>
+                                        <option value="Carné de Extranjería">Carnet de Extranjería</option>
+                                        <option value="Pasaporte">Pasaporte</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    
+                        <div class="ctnCheckbox">
+                            <input type="checkbox" id="privacyTool3503766000237491098" name="privacyTool" required onclick="disableSubmit()" />
+                            <p>Declaro haber leído y acepto la Política de Privacidad, y autorizo conforme a lo establecido <span id="pop">aquí</span>, el tratamiento de mis datos personales.</p>
+                        </div>
+                    
+                        <div class="bloque1FormButton">
+                            <button class="button__change" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <img class="imageDesktop" src="background2.jpeg" alt="Banner Institucional">
+
+            
+        </div>
+        <span class="franja"></span>
+    </div>
+</body>
+</html>

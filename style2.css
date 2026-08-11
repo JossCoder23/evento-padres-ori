@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    font-family: "TTNorms", sans-serif;
+    margin: 0;
+    line-height: 1.3;
+}
+:root {
+    --azul: #042354;
+    --azul-claro: #2841dd;
+}
+
+.imageDesktop {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+}
+
+.ctnBloque1 .logoContent,
+.ctnBloque1 .backFormulario {
+    position: relative;
+    z-index: 1;
+}
+
+.ctnBloque1 {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 2rem 0 4rem 0;
+    box-sizing: border-box;
+}
+
+.backFormulario {
+    background-color: white;
+    width: 17rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.backFormulario .ctnFormulario {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+}
+
+.backFormulario .ctnFormulario h3,
+.backFormulario .ctnFormulario h5 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.backFormulario .ctnFormulario .title {
+    font-weight: 600;
+}
+
+.bloque1Container__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.ctPreguntas {
+    padding: 1rem;
+    display: flex;
+    row-gap: .5rem;
+    flex-direction: column;
+    border: 1px dashed black;
+}
+
+.ctPreguntas legend {
+    background-color: var(--azul);
+    font-size: .8rem;
+    padding: .5rem;
+    color: white;
+    border-radius: .5rem;
+}
+
+.double__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.input-field {
+    width: 100%;
+}
+
+.input-field input,
+.input-field select {
+    width: 100%;
+    box-sizing: border-box; /* La clave para que midan exactamente lo mismo */
+    min-height: 2rem;
+    color: rgb(134, 134, 134);
+}
+
+.input-field input:focus,
+.input-field select:focus {
+    outline: none;
+} 
+
+
+.input-field input {
+    padding-left: .3rem;
+}
+
+.ctnCheckbox {
+    display: flex;
+    column-gap: .5rem ;
+}
+
+.ctnCheckbox p {
+    font-size: .8rem;
+}
+
+.bloque1FormButton {
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque1FormButton button {
+    background-color: var(--azul-claro);
+    border: none;
+    width: 8rem;
+    border-radius: .5rem;
+    height: 100%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.bloque1FormButton button:hover {
+    background-color: var(--azul);
+}
+
+.franja {
+    height: 2rem;
+    width: 100%;
+    background-color: var(--azul);
+    position: absolute;
+    left: 0;
+    bottom: 0rem;
+    z-index: 3;
+}
+
+.wrapper {
+    position: relative;
+}
