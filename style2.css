@@ -151,3 +151,64 @@
 .wrapper {
     position: relative;
 }
+
+@media(min-width: 470px) {
+    .backFormulario {
+        width: 21rem;
+    }
+}
+
+@media(min-width: 720px) {
+    .logo {
+        height: 4rem;
+    }
+    .backFormulario {
+        width: 35rem;
+    }
+    .ctnFormulario h3 {
+        font-size: 1.5rem;
+    }
+    .ctnFormulario h5 {
+        font-size: 1.1rem;
+    }
+    .backFormulario .ctnFormulario {
+        row-gap: 1.2rem;
+    }
+    .bloque1Container__form {
+        row-gap: 1.2rem;
+    }
+    .double__form {
+        flex-direction: row;
+        column-gap: .8rem;
+    }
+    .ctPreguntas {
+        row-gap: 1rem;
+    } 
+    .ctPreguntas legend {
+        font-size: 1.2rem;
+    }
+    .input-field input {
+        min-height: 2.3rem;
+    }
+    .bloque1FormButton {
+        height: 2.8rem;
+    } 
+    .button__change {
+        width: 10rem;
+    }
+    .button__change {
+        font-size: 1.4rem;
+    } 
+    .imageDesktop {
+        min-width: 100rem;
+        /* height: auto; */
+        object-fit: revert-rule;
+    }
+}
+
+@media(min-width: 1020px) {
+    .logo {
+        width: auto;
+        height: 4.2rem;
+    }
+} 
